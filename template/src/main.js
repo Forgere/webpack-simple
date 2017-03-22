@@ -6,20 +6,6 @@ import router from './router'
 
 new Vue({
   el: '#app',
-  render: h => h(App)
-})
-
-Vue.config.productionTip = false
-
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  {{#router}}
-  router,
-  {{/router}}
-})
-new Vue({
-  el: '#app',
   {{#router}}
   router,
   {{/router}}
