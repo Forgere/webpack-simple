@@ -32,8 +32,9 @@ module.exports = {
             'scss': 'vue-style-loader!css-loader!sass-loader',
             'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
             {{/sass}}
-          }
+          },
           // other vue-loader options go here
+          postcss: [require('autoprefixer')]
         }
       },
       {
