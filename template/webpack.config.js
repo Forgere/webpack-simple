@@ -10,6 +10,16 @@ module.exports = {
   },
   module: {
     rules: [
+      {{#lint}}
+      {
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        enforce: "pre",
+        options: {
+          formatter: require('eslint-friendly-formatter')
+        }
+      },
+      {{/lint}}
       {
         test: /\.vue$/,
         loader: 'vue-loader',

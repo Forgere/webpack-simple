@@ -4,6 +4,7 @@ import App from './App.vue'
 import router from './router'
 {{/router}}
 
+{{#lint}}/* eslint-disable no-new */{{/lint}}
 new Vue({
   el: '#app',
   {{#router}}
