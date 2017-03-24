@@ -32,7 +32,7 @@ export default new Router({
     {
       path: '/store',
       name: 'Store',
-      components: Stores
+      component: Stores
     }
   ],
   linkActiveClass: 'active'
