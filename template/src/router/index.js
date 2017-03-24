@@ -4,6 +4,7 @@ import Hello from '../components/Hello.vue'
 import Back from '../components/Back.vue'
 import BackDetail from '../components/BackDetail.vue'
 import Home from '../components/Home.vue'
+import Stores from '../components/Stores.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -27,6 +28,11 @@ export default new Router({
         name: 'details',
         component: BackDetail
       }]
+    },
+    {
+      path: '/store',
+      name: 'Store',
+      components: Stores
     }
   ],
   linkActiveClass: 'active'
