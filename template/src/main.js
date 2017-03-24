@@ -4,8 +4,7 @@ import App from './App.vue'
 import router from './router'
 {{/router}}
 {{#vuex}}
-import Vuex from 'vuex'
-Vue.use(Vuex)
+import store from './store/store.js'
 {{/vuex}}
 {{#lint}}/* eslint-disable no-new */{{/lint}}
 new Vue({
@@ -13,6 +12,9 @@ new Vue({
   {{#router}}
   router,
   {{/router}}
+  {{#vuex}}
+  store,
+  {{/vuex}}
   template: '<App/>',
   components: { App }
 })

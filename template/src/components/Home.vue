@@ -10,22 +10,19 @@
 </template>
 
 <script>
-	{{#vuex}}
-  import store from '../store/store.js'
-  {{/vuex}}
   export default {
     name: 'home'{{#vuex}},
     computed: {
       count () {
-        return store.state.count
+        return this.$store.state.count
       }
     },
     methods: {
       increment () {
-        store.commit('increment')
+        this.$store.commit('increment')
       },
       decrement () {
-        store.commit('decrement')
+        this.$store.commit('decrement')
       }
     }{{/vuex}}
   }
