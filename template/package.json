@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "vue": "^2.2.1"{{#router}},
-    "vue-router": "^2.2.0"{{/router}}
+    "vue-router": "^2.2.0"{{/router}}{{#vuex}},
+    "vuex": "^2.2.1"{{/vuex}}
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

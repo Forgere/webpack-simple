@@ -2,13 +2,29 @@
   <div class="stores">
     <router-link to='/'>返回主页，查看鱼</router-link>
     <div>这是vuex示例</div>
-    <router-view></router-view>
+    {{count}}
+    <button @click='increment'>+</button>
+    <button @click='decrement'>-</button>
   </div>
 </template>
 
 <script>
+import store from '../store/store.js'
 export default {
-  name: 'stores',
+  name: 'store',
+  computed: {
+    count () {
+      return store.state.count
+    }
+  },
+  methods: {
+    increment () {
+      store.commit('increment')
+    },
+    decrement () {
+      store.commit('decrement')
+    }
+  },
   data () {
     return {
     }
