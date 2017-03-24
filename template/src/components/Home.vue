@@ -1,16 +1,20 @@
 <template>
   <div class='home'>
     这是主页
+    {{#vuex}}
     \{{count}}
     <button @click='increment'>+</button>
     <button @click='decrement'>-</button>
+    {{/vuex}}
   </div>
 </template>
 
 <script>
+	{{#vuex}}
   import store from '../store/store.js'
+  {{/vuex}}
   export default {
-    name: 'home',
+    name: 'home'{{#vuex}},
     computed: {
       count () {
         return store.state.count
@@ -23,7 +27,7 @@
       decrement () {
         store.commit('decrement')
       }
-    }
+    }{{/vuex}}
   }
 </script>
 
