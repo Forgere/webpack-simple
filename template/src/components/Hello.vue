@@ -2,7 +2,7 @@
   <div class="hello">
     <router-link to='/back'>backs</router-link>
     <h1></h1>
-    <div>Name: {{$route.params.id}}</div>
+    <div>Name: \{{$route.params.id}}</div>
   </div>
 </template>
 
