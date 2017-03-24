@@ -3,7 +3,7 @@
     <ul>
       <router-link tag='li' to='/' exact><a>主页</a></router-link>
       <router-link tag='li' to='/back'><a>第一类</a></router-link>
-      <router-link tag='li' to='/hello'><a>第二类</a></router-link>
+      <router-link tag='li' to='/hello/foo'><a>第二类</a></router-link>
     </ul>
   </div>
 </template>
