@@ -2,7 +2,7 @@
   <div class="stores">
     <router-link to='/'>返回主页，查看鱼</router-link>
     <div>这是vuex示例</div>
-    {{count}}
+    \{{count}}
     <button @click='increment'>+</button>
     <button @click='decrement'>-</button>
   </div>

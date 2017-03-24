@@ -1,7 +1,7 @@
 <template>
   <div class='home'>
     这是主页
-    {{count}}
+    \{{count}}
     <button @click='increment'>+</button>
     <button @click='decrement'>-</button>
   </div>
