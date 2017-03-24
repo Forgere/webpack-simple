@@ -1,7 +1,7 @@
 <template>
   <div class="back">
     <router-link to='/back/details'>第一类详情</router-link>
-    <div>这是第一类</div>
+    <div>这是路由示例</div>
     <router-view></router-view>
   </div>
 </template>

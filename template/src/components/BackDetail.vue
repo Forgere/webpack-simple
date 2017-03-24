@@ -1,14 +1,7 @@
 <template>
   <div class="back">
     <router-link to='/back'>返回</router-link>
-    <div>我是详情</div>
-    <div>我是详情</div>
-    <div>我是详情</div>
-    <div>我是详情</div>
-    <div>我是详情</div>
-    <div>我是详情</div>
-    <div>我是详情</div>
-    <div>我是详情</div>
+    <div>我是路由详情示例/子路由示例</div>
   </div>
 </template>
 

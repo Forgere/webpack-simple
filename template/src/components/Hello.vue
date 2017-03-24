@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <router-link to='/back'>backs</router-link>
-    <h1></h1>
+    <h1>动态路由示例</h1>
     <div>Name: \{{$route.params.id}}</div>
   </div>
 </template>
